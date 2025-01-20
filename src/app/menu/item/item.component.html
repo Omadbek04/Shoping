@@ -1,0 +1,16 @@
+<mat-card class="example-card card">
+  <mat-card-header>
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <mat-card-subtitle>{{ item.sllerName }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="item.imgSrc" [alt]="item.title" />
+  <mat-card-actions>
+    <div class="actions">
+      <h2>{{ item.price | currency : "USD" }}</h2>
+      <button mat-stroked-button color="accent">
+        Add to cart
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </div>
+  </mat-card-actions>
+</mat-card>
