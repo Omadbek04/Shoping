@@ -1,0 +1,35 @@
+.cart-container {
+  width: 100%;
+  padding: 20px;
+}
+.cart-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart {
+  padding: 10px;
+}
+.cart-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.cart-actions {
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+.cart-header {
+  padding: 0;
+  margin-bottom: 5px;
+}
+.cart-button {
+  background-color: rgb(2, 2, 255);
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+    border-radius: 5px;
+}
