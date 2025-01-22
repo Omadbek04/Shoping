@@ -1,0 +1,17 @@
+<div class="cart-item-container">
+  <div class="cart-item-about">
+    <img
+      [src]="item.imgSrc"
+      [alt]="item.title"
+    />
+    <div>
+      <h1>{{item.title}}</h1>
+      <span>{{item.sllerName}}</span>
+    </div>
+  </div>
+  <div class="cart-item-price">
+    <span class="all-price"> {{ item.price| currency : "USD" }}</span>
+    <app-count [count]="item.count"/>
+    <button class="remove">Remove</button>
+  </div>
+</div>

@@ -5,12 +5,19 @@
   </mat-card-header>
   <img mat-card-image [src]="item.imgSrc" [alt]="item.title" />
   <mat-card-actions>
+    @if (!showCount || item.count === 0) {
     <div class="actions">
       <h2>{{ item.price | currency : "USD" }}</h2>
-      <button mat-stroked-button color="accent">
+      <button mat-stroked-button color="accent" (click)="addToCard()">
         Add to cart
         <mat-icon>shopping_cart</mat-icon>
       </button>
     </div>
+
+    } @else {
+
+    <app-count [(count)]="item.count" (countChange)="onCountChange()"/>
+
+    }
   </mat-card-actions>
 </mat-card>

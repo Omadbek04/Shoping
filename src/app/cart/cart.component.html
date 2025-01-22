@@ -10,10 +10,17 @@
       <mat-card-subtitle>Items: 10</mat-card-subtitle>
     </mat-card-header>
     <mat-divider></mat-divider>
-    <mat-card-content class="cart-content">helo</mat-card-content>
+    <mat-card-content class="cart-content">
+      @for (item of items; track item.id) {
+      <app-cart-item [item]="item"/>
+      }
+    </mat-card-content>
     <mat-divider></mat-divider>
     <mat-card-actions class="cart-actions">
-      <button mat-flat-button color="primary">Checkout</button>
+      <div class="cart-total">
+        <span> {{ total | currency : "USD" }}</span>
+        <button mat-flat-button color="primary">Checkout</button>
+      </div>
     </mat-card-actions>
   </mat-card>
 </div>

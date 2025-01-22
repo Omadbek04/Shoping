@@ -31,5 +31,13 @@
   border: 1px solid transparent;
   color: white;
   cursor: pointer;
-    border-radius: 5px;
+  border-radius: 5px;
+}
+.cart-total {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cart-total span {
+  font-weight: bold;
 }
