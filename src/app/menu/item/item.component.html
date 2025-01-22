@@ -12,12 +12,14 @@
         Add to cart
         <mat-icon>shopping_cart</mat-icon>
       </button>
+      
     </div>
-
     } @else {
-
-    <app-count [(count)]="item.count" (countChange)="onCountChange()"/>
-
+      
+      <div class="count">
+        <app-count [(count)]="item.count" (countChange)="onCountChange()"/>
+      </div>
+      
     }
   </mat-card-actions>
 </mat-card>

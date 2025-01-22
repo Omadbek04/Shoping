@@ -16,6 +16,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   display: flex;
   gap: 10px;
   align-items: center;
+  width:100%;
+  justify-content:end;
 }
   .cart-item-quantity button {
   width: 30px;

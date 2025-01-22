@@ -11,7 +11,7 @@
   </div>
   <div class="cart-item-price">
     <span class="all-price"> {{ item.price| currency : "USD" }}</span>
-    <app-count [count]="item.count"/>
-    <button class="remove">Remove</button>
+    <app-count [count]="item.count" />
+    <button class="remove" (click)="removeItem(item.id)">Remove</button>
   </div>
 </div>

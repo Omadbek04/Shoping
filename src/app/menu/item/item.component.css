@@ -19,3 +19,8 @@
 .actions h2 {
   margin: 0;
 }
+.count{
+  width: 100%;
+  display: flex ;
+  justify-content: end !important;
+}

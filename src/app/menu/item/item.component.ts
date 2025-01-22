@@ -37,6 +37,7 @@ export class ItemComponent {
   addToCard(): void {
     this.showCount = true;
     this._items.count += 1;
+    this.onCountClick.emit(this.item);
   }
   onCountChange(): void {
     this.onCountClick.emit(this.item);
